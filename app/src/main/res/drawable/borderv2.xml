@@ -1,0 +1,10 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke
+        android:width="2dp"
+        android:color="@color/pri"/> <!-- Cor da borda -->
+
+    <solid android:color="@color/pri"/> <!-- Cor de fundo transparente -->
+
+    <corners
+        android:radius="8dp"/> <!-- Raio dos cantos, se necessário -->
+</shape>

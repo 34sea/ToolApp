@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddTools"
+    android:background="@color/sinza"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start"
+        android:background="@color/pri"
+        android:padding="15dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/btnbackCadastroL"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:src="@drawable/devolta2"
+                android:layout_marginTop="0dp"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@color/white"
+        android:layout_weight="1"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="0dp"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginBottom="10dp"
+                    >
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/editTextNome"
+                    android:layout_width="match_parent"
+
+                    android:hint="Nome"
+                    android:inputType="text"
+                    android:layout_height="50dp"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/bordasedit"
+                    />
+
+
+
+                <EditText
+                    android:id="@+id/editTextPreco"
+                    android:layout_width="match_parent"
+                    android:hint="Preço"
+                    android:layout_height="50dp"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/bordasedit"
+                    android:layout_marginTop="15dp"
+                    android:inputType="number"
+                    />
+                <EditText
+                    android:id="@+id/editTextDesc"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:hint="Descrição"
+                    android:inputType="text"
+                    android:layout_height="50dp"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/bordasedit"
+                    />
+
+                <Spinner
+                    android:id="@+id/spnCategoria"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bordasedit"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="15dp"
+
+                    />
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="3dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:text="Data:" />
+
+                    <TextView
+                        android:id="@+id/lData"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5px"
+                        android:text="00" />
+
+                    <TextView
+                        android:id="@+id/txtTesteItem"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5px"
+                        android:text="00" />
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="15dp"
+        android:background="@color/white"
+        >
+        <TextView
+            android:id="@+id/btnAddUser"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:text="Cadastrar"
+            android:background="@drawable/borderv2"
+            android:textColor="#ffffff"
+            android:textAlignment="center"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+</LinearLayout>
